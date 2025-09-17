@@ -252,3 +252,27 @@ elif(operation == 'div'):
     print("division is:",a/b)
 else:
     print("invalid choice!")
+
+
+#to check body temp
+temp = float(input("enter body temp:"))
+if (temp <= 36):
+    print("the person is suffering from cold")
+elif (36<= temp <= 37.5):
+    print("the person is normal")
+elif (temp >= 37.5):
+    print("the person is suffring from fever")
+else:
+    print("invalid choica!")
+
+
+#integer findings
+m = int(input("enter a number:"))
+n = int(input("enter a number:"))
+if (m>n):
+    return0
+else:
+    sum = 0
+    for i in range(m,n+1):
+        sum += i**3
+    print("sum of cubes:",sum)
